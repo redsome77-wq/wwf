@@ -1,0 +1,43 @@
+/* 공통 common.css */
+#wrap {}
+#wrap * {
+    transition: all 0.3s; /* 크기변형 애니메이션 부드럽게 */
+}
+#wrap .container {
+    min-width: 320px;
+}
+/* 모바일 디자인 - .sponser_btn */
+#wrap .container .sponser_btn {
+    background: linear-gradient( 90deg, #FE9300, #FF7300);
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    gap: 10px;
+    width: 164px; height: 41px;
+    border-radius: 37.5px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+#wrap .container .sponser_btn::after {
+    content: '>'; display: block;
+    color: #fff;
+    font-size: 0.75rem;
+}
+#wrap .container .sponser_btn em {
+    color: #fff;
+}
+#wrap .container .sponser_btn:hover {
+    background: linear-gradient(90deg, #fed800, #ffc400);
+}
+#wrap .container .sponser_btn:hover em {
+    color: #fff;
+    font-weight: 600;
+}
+#wrap .container .sponser_btn:hover::after {
+    color: #fff;
+    font-weight: 600;
+    animation: move_li 0.3s alternate infinite;
+}
+@keyframes move_li {
+    0% {transform: translateX(-1px);}
+    100% {transform: translateX(2px);}
+}
