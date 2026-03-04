@@ -6,6 +6,10 @@
 #wrap .container {
     min-width: 320px;
 }
+#wrap .container > * {
+    max-width: 1250px;
+    margin: 0 auto;
+}
 /* 모바일 디자인 - .sponser_btn */
 #wrap .container .sponser_btn {
     background: linear-gradient( 90deg, #FE9300, #FF7300);
@@ -40,4 +44,12 @@
 @keyframes move_li {
     0% {transform: translateX(-1px);}
     100% {transform: translateX(2px);}
+}
+@keyframes scale_b {
+    0% {transform: scale(1.0);}
+    100% {transform: scale(1.1);}
+}
+@keyframes color_b {
+    0% {color:#FF7300}
+    100% {color:#ffc400}
 }

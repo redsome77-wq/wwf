@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_grid 비교연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style> /* 내부스타일시트 작성위치 */
+    /* 공통 */
+    .contents {
+        width: 400px; margin: 30px auto;
+        border: 2px solid #000;
+    }
+    .contents img {width: 100%;}
+    .contents .quiz {background: yellow;}
+    .contents .info {background: turquoise;}
+    /* flex */
+    .flex {
+        display: flex; /* 퀴즈+인포 정렬 위한 준비 */
+        gap:10px;
+    }
+    .flex .quiz > * {width: 50%;}
+    .flex .quiz {
+        flex:1;
+        display: flex; flex-flow: row wrap;
+    }
+    .flex .info {
+        flex:1;
+    }
+    .flex .quiz h2 {
+        background: yellowgreen;
+    }
+    .flex .quiz ol {
+        background: violet;
+    }
+    .flex .quiz #btn {
+        background: salmon;
+        height: 50px;
+    }
+    /* grid */
+    .grid {
+        display: grid; /* 퀴즈+인포 정렬 위한 준비 */
+        grid-template-columns: 1fr 1fr; /* 1:1배치 : 1fr 1fr///단위: fr */
+        /* grid-template-rows: 100px 200px; */
+        gap:10px;
+    }
+    .grid .quiz {
+        display: grid; /* 요소 정렬 위해 부모에 명령 */
+        /* grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 50px; */
+        grid-template-areas:
+            'title btn'
+            'list list';
+            grid-template-columns: 50px 1fr ;
+            grid-template-rows: 1fr 1fr ;
+    }
+    .grid .quiz h2 {grid-area: title; background: yellowgreen;}
+    .grid .quiz ol {grid-area: list; background: violet;}
+    .grid .quiz #btn {grid-area: btn; background: salmon;}
+    .grid .info {}
+    /* 
+    정렬 자식이 2개 이상이고 한 방향(수평,수직)으로만 정렬 -> flex, grid
+    정렬 자식이 3개 이상이고 반응형 기기에 따라 재배열 자유 -> grid
+    */
+    </style>
+</head>
+<body>
+    <div class="contents flex">
+        <div class="quiz">
+            <h2>퀴즈제목</h2>
+            <ol>
+                <li>30</li>
+                <li>40</li>
+                <li>50</li>
+            </ol>
+            <button typw="button" id="btn">제출</button>
+        </div>
+        <div class="info">
+            <img src="./img/quiz_contents.png" alt="">
+            <p>업데이트</p>
+        </div>
+    </div>
+    <div class="contents grid">
+        <div class="quiz">
+            <h2>퀴즈제목</h2>
+            <ol>
+                <li>30</li>
+                <li>40</li>
+                <li>50</li>
+            </ol>
+            <button type="button" id="btn">제출</button>
+        </div>
+        <div class="info">
+            <img src="./img/quiz_contents.png" alt="">
+            <p>업데이트</p>
+        </div>
+    </div>
+</body>
+</html>

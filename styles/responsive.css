@@ -1,8 +1,24 @@
 /* 반응형조건 reponsive */
 /* m(320~) -> t(1024~) -> d(1250~) */
-@media screen and (min-width:760px) { /* 임의 추가 사이즈 */
+@media screen and (min-width:630px) { /* 임의 추가 사이즈 */
+    #wrap .quiz_bg .quiz {
+        flex-flow: row nowrap;
+    }
+    #wrap .quiz_bg .quiz > * {
+        flex: 1;
+    }
+}
+@media screen and (min-width:860px) { /* 임의 추가 사이즈 */
     #wrap .intro {
         padding: 300px 0 100px;
+    }
+/* -------------------------------1행끝 2행시작 */
+    #wrap .quiz_bg .quiz {
+        flex-flow: row nowrap;
+    }
+    #wrap .quiz_bg .quiz .q_zone h2 span {
+        display:inline-block;
+        margin-right: 5px;
     }
 }
 @media screen and (min-width:1024px) {
@@ -27,6 +43,34 @@
     }
     #wrap .intro h1 span {
         font-size: 3.13rem;
+    }
+/* =========================================1행끝 */
+/* =========================================2행시작 */
+    #wrap .quiz_bg {
+        padding: 150px 80px;
+    }
+    #wrap .quiz_bg .quiz .q_zone {}
+    #wrap .quiz_bg .quiz .q_zone h1 {
+        font-size: 2.5rem;
+        margin-bottom: 56px;
+        margin-left: 222px;
+    }
+    #wrap .quiz_bg .quiz .q_zone h2 {
+        margin-bottom: 8px;
+    }
+    #wrap .quiz_bg .quiz .q_zone h2 span {
+        font-size: 1.25rem;
+    }
+    #wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li label {
+        background-size: 28px;
+        padding-left: 48px;
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    #wrap .quiz_bg .quiz .q_zone #q_form #ansr_btn {
+        width: 300px; height: 54px;
+        font-size: 1.25rem;
     }
 } /* 1024~ */
 @media screen and (min-width:1250px) {
@@ -56,4 +100,5 @@
     #wrap .container .sponser_btn::after {
         font-size: 1.8rem;
     }
+
 }

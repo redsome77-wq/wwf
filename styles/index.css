@@ -43,3 +43,81 @@
     margin-bottom: 50px;
 }
 #wrap .intro .sponser_btn {}
+/* =========================================2행 퀴즈 */
+#wrap .quiz_bg {
+    background-image: url(../img/quiz_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+    width: 100%;
+}
+#wrap .quiz_bg .quiz {
+    display: flex; flex-flow: column nowrap; /* 기기 레이아웃 변경시 column -> row */
+    justify-content: center;
+    gap:50px
+}
+#wrap .quiz_bg .quiz .q_zone {}
+#wrap .quiz_bg .quiz .q_zone h1,
+#wrap .quiz_bg .quiz .q_zone h2 span {
+    color: #fff;
+}
+#wrap .quiz_bg .quiz .q_zone h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#wrap .quiz_bg .quiz .q_zone h2 {
+    margin-bottom: 16px;
+}
+#wrap .quiz_bg .quiz .q_zone h2 span {
+    display: block;
+    line-height: 1.7;
+}
+#wrap .quiz_bg .quiz .q_zone h2 span:nth-child(1) {}
+#wrap .quiz_bg .quiz .q_zone h2 span:nth-child(2) {}
+#wrap .quiz_bg .quiz .q_zone #q_form {}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list {}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li {
+    margin-bottom: 16px;
+    display: flex; flex-flow: row nowrap;
+}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li:last-child {    
+    margin-bottom: 8px;
+}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li .quiz_chk {display: none;}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li .quiz_chk:checked + label {
+    background-image: url(../img/chck_on.svg);
+}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li label {
+    color: #fff;
+    background-image: url(../img/chck_off.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 47.75px;
+}
+#wrap .quiz_bg .quiz .q_zone #q_form #quiz_list li:hover label {
+    animation: scale_b 0.3s alternate infinite, color_b 2s alternate infinite;
+}
+#wrap .quiz_bg .quiz .q_zone #q_form #ansr_btn {
+    background-color: #000;
+    color: #fff;
+    width: 100%; height: 47px;
+    padding: 10px 0;
+    border-radius: 50px;
+    margin-top: 16px;
+}
+#wrap .quiz_bg .quiz .q_now {
+    width: 100%;
+    margin: 0 auto;
+}
+#wrap .quiz_bg .quiz .q_now p {}
+#wrap .quiz_bg .quiz .q_now p:last-child {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 20px;
+    text-align: right;
+}
+#wrap .quiz_bg .quiz .q_now .q_img {}
+#wrap .quiz_bg .quiz .q_now .q_img img {
+    width: 100%;
+}
