@@ -5,10 +5,27 @@
 }
 #wrap .container {
     min-width: 320px;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 15px;
 }
-#wrap .container > * {
+#wrap .container .contents {
     max-width: 1250px;
     margin: 0 auto;
+}
+#wrap .container .contents h1 {
+    font-size: 1.38rem; font-weight: 500; line-height: 1.2;
+    margin: 0 0 40px;
+}
+#wrap .container .contents h1 .highlight {
+    font-size: 1.38rem; font-weight: 500; line-height: 1.2;
+    color: #050505;
+    background-color: #fff;
+}
+#wrap .container .contents > p,
+#wrap .container .contents h1+p {
+    font-size: 0.81rem; font-weight: 500; line-height: 1.7;
+    margin: 0 0 22px;
 }
 /* 모바일 디자인 - .sponser_btn */
 #wrap .container .sponser_btn {
@@ -41,6 +58,11 @@
     font-weight: 600;
     animation: move_li 0.3s alternate infinite;
 }
+
+
+
+
+
 @keyframes move_li {
     0% {transform: translateX(-1px);}
     100% {transform: translateX(2px);}

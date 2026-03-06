@@ -12,6 +12,17 @@
     #wrap .intro {
         padding: 300px 0 100px;
     }
+    /* -------------------------------------3~6행 공통 */
+    #wrap .container {
+        padding: 200px 80px;
+    }
+    #wrap .container .contents h1 {
+        font-size: 2.5rem;
+    }
+    #wrap .container .contents > p,
+    #wrap .container .contents h1+p {
+        font-size: 1.38rem;
+    }
 /* -------------------------------1행끝 2행시작 */
     #wrap .quiz_bg .quiz {
         flex-flow: row nowrap;
@@ -19,6 +30,42 @@
     #wrap .quiz_bg .quiz .q_zone h2 span {
         display:inline-block;
         margin-right: 5px;
+        }
+    /* -------------------------------3행시작 */
+    #wrap .video_bg .video h1 {
+        margin: 0 0 70px;
+    }
+    #wrap .video_bg .video iframe {
+        height: 484px;
+    }
+    /* -------------------------------4행시작 */
+    #wrap .reduction_bg .reduction h1 .highlight {
+        font-size: 2.5rem;
+    }
+    /* -------------------------------5행시작 */
+    #wrap .humanity_bg .humanity .list {
+        flex-flow: row nowrap;
+    }   
+    #wrap .humanity_bg .humanity .list li {
+        flex:1;
+    }
+    #wrap .humanity_bg .humanity .list li dl {
+        padding: 48px 59px;
+        height: 274px;
+    }
+    #wrap .humanity_bg .humanity .list li dl dt {}
+    #wrap .humanity_bg .humanity .list li dl dd {
+        font-size: 1.25rem;
+    }
+    #wrap .humanity_bg .humanity .list li .txt {
+        height: 250px;
+    }
+    #wrap .humanity_bg .humanity .list li .txt p {
+        font-size: 1.0rem;
+    }
+    /* -------------------------------6행시작 */
+    #wrap .crisis_bg .crisis h1 .highlight {
+        font-size: 2.5rem; font-weight:700; line-height: 1.7;
     }
 }
 @media screen and (min-width:1024px) {
@@ -90,6 +137,17 @@
     #wrap .intro h1 span:nth-child(2) {
         font-weight: 700;
     }
+/* -------------------------------------3~6행 공통 */
+    #wrap .container {
+        padding: 200px 335px;
+    }
+    #wrap .container .contents h1 {
+        font-size: 3.44rem;
+    }
+    #wrap .container .contents > p,
+    #wrap .container .contents h1+p {
+        font-size: 2.13rem;
+    }
     #wrap .container .sponser_btn {
         width: 409px; height: 71px;
     }
@@ -100,5 +158,53 @@
     #wrap .container .sponser_btn::after {
         font-size: 1.8rem;
     }
-
+/* --------------------------------------------------3행 */
+/* --------------------------------------------------4행 */
+    #wrap .reduction_bg .reduction h1 .highlight {
+        font-size: 3.44rem;
+    }
+/* --------------------------------------------------5행 */
+    #wrap .humanity_bg .humanity .list li dl {
+        height: 320px;
+    }
+    #wrap .humanity_bg .humanity .list li dl dt {}
+    #wrap .humanity_bg .humanity .list li dl dd {
+        font-size: 1.25rem;
+    }
+    #wrap .humanity_bg .humanity .list li .txt p {
+        font-size: 1.25rem; line-height: 1.7;
+    }
+/* --------------------------------------------------6행 */
+#wrap .crisis_bg .crisis h1 .highlight {
+    font-size: 3.44rem; font-weight:700; line-height: 1.7;
+}
+/* --------------------------------------------------7행 */
+/* --------------------------------------------------8행 */
+    #wrap .activity_bg .activity h1 {
+        font-size: 3.44rem; line-height: 1.2;
+    }
+    #wrap .activity_bg .activity .details {
+        grid-template-areas:
+            'piblic nature'
+            'corporation nature';
+            grid-template-columns: 1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {
+        position: relative;
+        padding: 111px 0 22px;
+    }
+    #wrap .activity_bg .activity .details li:nth-child(3) .txt {
+        position: absolute;
+        bottom: 31px; left: 0;
+    }
+    #wrap .activity_bg .activity .details li .txt {
+        width: 50%;
+    }
+    #wrap .activity_bg .activity .details li .txt dt {
+        margin: 0 0 18px;
+        font-size: 1.38rem;
+    }
+    #wrap .activity_bg .activity .details li .txt dd {
+        font-size: 0.81rem;
+    }
 }
