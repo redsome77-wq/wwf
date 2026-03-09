@@ -288,4 +288,83 @@
     font-size: 1.25rem; line-height: 1.7;
 }
 /* =========================================9행 선물정보 */
+#wrap .gift_bg {
+    background-image: url(../img/50_bg.png);
+    background-position: center;
+    background-size: cover
+}
+#wrap .gift_bg .gift {
+    text-align: center;
+}
+#wrap .gift_bg .gift * {
+    color: #fff;
+}
+#wrap .gift_bg .gift .title {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap .gift_bg .gift .title h1 {
+    margin: 0 0 22px;
+    text-align: left;
+}
+#wrap .gift_bg .gift .title .sponser_btn {
+    margin: 0 0;
+}
+#wrap .gift_bg .gift .sponser_btn em {}
+#wrap .gift_bg .gift .gift_list {
+    display: flex; flex-flow: column;
+    gap:22px;
+    padding: 40px 0;
+}
+#wrap .gift_bg .gift .gift_list {}
+#wrap .gift_bg .gift .gift_list li {}
+#wrap .gift_bg .gift .gift_list li:nth-child(1) .gift_img {
+    background-image: url(../img/freebie2.jpg);
+}
+#wrap .gift_bg .gift .gift_list li:nth-child(2) .gift_img {
+    background-image: url(../img/freebie1.jpg);
+}
+#wrap .gift_bg .gift .gift_list li:nth-child(3) .gift_img {
+    background-image: url(../img/freebie3.jpg);
+}
+#wrap .gift_bg .gift .gift_list li .gift_img {
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#wrap .gift_bg .gift .gift_list li .gift_img + p {
+    text-align: center;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-top: 13px;
+}
+#wrap .gift_bg .gift .gift_list li p {}
+#wrap .gift_bg .gift .gift_join {
+    display: inline-block;
+    background-color: #fff;
+    color: #050505;
+    width: max-content;
+    font-size: 1.0rem;
+    margin: 0 0 0 0;
+}
 /* =========================================10행 안내 */
+#wrap .cashinfo_bg {
+    background-color: #E4E5EA;
+}
+#wrap .cashinfo_bg .cashinfo {
+}
+#wrap .cashinfo_bg .cashinfo h1 {
+    margin: 0 0 0 0;
+    font-weight:700;
+}
+#wrap .cashinfo_bg .cashinfo p,
+#wrap .cashinfo_bg .cashinfo > p + p,
+#wrap .cashinfo_bg .cashinfo h1+p {
+    margin: 0 0 0 0;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 1.0rem;
+}
+#wrap .cashinfo_bg .cashinfo p {
+}

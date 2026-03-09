@@ -67,6 +67,41 @@
     #wrap .crisis_bg .crisis h1 .highlight {
         font-size: 2.5rem; font-weight:700; line-height: 1.7;
     }
+    /* -------------------------------9행시작 */
+    #wrap .gift_bg .gift .title {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: end;
+    }
+    #wrap .gift_bg .gift .title h1 {
+        margin: 0 0 0 0;
+        font-size: 2.50rem;
+    }
+    #wrap .gift_bg .gift .gift_list {
+        display: grid;
+        grid-template-areas:
+            'two_goods three_goods'
+            'five_goods five_goods';
+    }
+    #wrap .gift_bg .gift .gift_list li:nth-child(1) {
+        grid-area: two_goods;
+    }
+    #wrap .gift_bg .gift .gift_list li:nth-child(2) {
+        grid-area: three_goods;
+    }
+    #wrap .gift_bg .gift .gift_list li:nth-child(3) {
+        grid-area: five_goods;
+    }
+    #wrap .gift_bg .gift .gift_list li .gift_img {
+        height: 300px;
+    }
+    #wrap .gift_bg .gift .gift_join {
+        position: relative; 
+    }
+    /* -------------------------------10행시작 */
+    #wrap .cashinfo_bg {
+        padding: 100px 80px;
+    }
 }
 @media screen and (min-width:1024px) {
     #wrap .intro {
@@ -114,7 +149,6 @@
         font-size: 1.25rem;
         line-height: 1.5;
     }
-
     #wrap .quiz_bg .quiz .q_zone #q_form #ansr_btn {
         width: 300px; height: 54px;
         font-size: 1.25rem;
@@ -175,8 +209,8 @@
         font-size: 1.25rem; line-height: 1.7;
     }
 /* --------------------------------------------------6행 */
-#wrap .crisis_bg .crisis h1 .highlight {
-    font-size: 3.44rem; font-weight:700; line-height: 1.7;
+    #wrap .crisis_bg .crisis h1 .highlight {
+        font-size: 3.44rem; font-weight:700; line-height: 1.7;
 }
 /* --------------------------------------------------7행 */
 /* --------------------------------------------------8행 */
@@ -207,4 +241,39 @@
     #wrap .activity_bg .activity .details li .txt dd {
         font-size: 0.81rem;
     }
+    /* --------------------------------------------------9행 */
+    #wrap .gift_bg {
+        padding: 200px 335px;
+        align-items: center;
+    }
+    #wrap .gift_bg .gift {
+        max-width: 1250px;
+    }
+    #wrap .gift_bg .gift .title h1 {
+            font-size: 3.44rem;
+        }
+        #wrap .gift_bg .gift .title .sponser_btn {
+            width: 409px; height: 71px;
+        }
+        #wrap .gift_bg .gift .gift_list {
+            padding: 70px 0;
+            grid-template-areas:
+            'two_goods three_goods five_goods';
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        #wrap .gift_bg .gift .gift_list li p {
+            font-size: 1.25rem;
+        }
+        #wrap .gift_bg .gift .gift_join {
+            font-size: 1.25rem;
+        }
+        /* --------------------------------------------------10행 */
+        #wrap .cashinfo_bg {
+            padding: 100px 335px;
+        }
+        #wrap .cashinfo_bg .cashinfo p,
+        #wrap .cashinfo_bg .cashinfo > p + p,
+        #wrap .cashinfo_bg .cashinfo h1+p {
+            font-size: 1.25rem;
+        }
 }
