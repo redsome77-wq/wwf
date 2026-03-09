@@ -154,6 +154,9 @@
 #wrap .humanity_bg .humanity h1 {
     text-align: center;
 }
+#wrap .humanity_bg .humanity h1+p {
+    font-weight: 400;
+}
 #wrap .humanity_bg .humanity p {
     text-align: center;
 }
@@ -236,6 +239,10 @@
     z-index:999;
     position: relative;
     text-align: center;
+}
+#wrap .wwf_bg .wwf h1+p,
+#wrap .wwf_bg .wwf p+p {
+    font-weight: 400;
 }
 #wrap .wwf_bg .wwf h1 {
     font-size: 1.88rem; font-weight: 700;
